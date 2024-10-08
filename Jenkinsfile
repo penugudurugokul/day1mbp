@@ -9,14 +9,7 @@ pipeline {
         echo "Building & Testing Application."
       }
     }
-    stage("Dev Deploy"){
-      when {
-        branch 'develop'
-      }
-      steps {
-        echo "Deploy to deve environment"
-      }
-    }
+    
     stage("Test Deploy"){
       when {
         branch 'test'
