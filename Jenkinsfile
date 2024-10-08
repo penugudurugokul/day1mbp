@@ -22,7 +22,7 @@ pipeline {
         branch 'test'
       }
       steps {
-        echo "Deploy to test environment updated"
+        echo "Deploy to test environment "
       }
     }
     stage("Prod Deploy"){
