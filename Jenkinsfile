@@ -15,7 +15,7 @@ pipeline {
         branch 'test'
       }
       steps {
-        echo "Deploy to test environment"
+        echo "Deploy to test environment changed tin testing"
       }
     }
     stage("Prod Deploy"){
