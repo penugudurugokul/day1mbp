@@ -3,7 +3,7 @@ pipeline {
   stages{
     stage("Build & Test"){
       when {
-        branch 'develop'
+        branch 'devlop'
       }
       steps {
         echo "Building & Testing Application."
@@ -11,7 +11,7 @@ pipeline {
     }
     stage("Dev Deploy"){
       when {
-        branch 'develop'
+        branch 'devlop'
       }
       steps {
         echo "Deploy to deve environment"
